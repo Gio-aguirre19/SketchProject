@@ -1,0 +1,19 @@
+html{
+	background-color: green;
+}
+#grid{
+	position: relative;
+	margin:0 auto 2em auto;
+	width:500px;
+	height:550px;
+}
+#grid div {
+	position: absolute;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: blue;
+	border: 1px solid #ddd;
+	width: 35px;
+	height: 35px;
+}
