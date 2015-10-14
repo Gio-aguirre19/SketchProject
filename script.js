@@ -12,7 +12,7 @@ for(i=0; i<cols; i++){
 		square.style.left = leftPos+'px';
 		$(document).ready(function(){
 			$('#grid div').mouseenter(function(){
-				$(this).fadeTo('fast', 0.2);
+				$(this).fadeTo('fast', 1);
 			});
 			$('#restart').click(function(){
 				$(LeGrid).appendChild(square);
