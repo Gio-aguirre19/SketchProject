@@ -1,5 +1,21 @@
-var rows = 16;
-var cols = 16;
+var rows=16;
+var cols=16;
+var Size = document.getElementById("boxSize");
+function Change(){
+	if (Size.value == '4x4'){
+		rows = 4;
+		cols = 4;
+	}else if (Size.value == '8x8'){
+		rows = 8;
+		cols = 8;
+	}else if (Size.value == '16x16'){
+		rows = 16;
+		cols = 16;
+	}else{
+		rows = 32;
+		cols = 32;
+	}
+}
 var squareSize = 35;
 var LeGrid = document.getElementById("grid");
 for(i=0; i<cols; i++){
@@ -14,9 +30,9 @@ for(i=0; i<cols; i++){
 			$('#grid div').mouseenter(function(){
 				$(this).fadeTo('fast', 1);
 			});
-			$('#restart').click(function(){
-				$(LeGrid).appendChild(square);
-			});
 		});
 	}
+}
+function restart() {
+    location.reload();
 }
